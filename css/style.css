@@ -523,7 +523,8 @@ p {
   padding: 0;
 }
 
-.row::after {
+.row::after,
+.links-row::after,.slider-wrap::after {
   display: table;
   clear: both;
   content: '';
@@ -586,7 +587,6 @@ p {
 .icon-bookmark,
 .icon-basket,
 .icon-phone {
-  opacity: .3;
   color: #6a7180;
 }
 
@@ -705,15 +705,16 @@ input[type='search']:focus {
 
 .sing-up {
   width: 150px;
+  margin-left: 10px;
 }
 
 .top-nav {
-  margin-top: 45px;
   font-size: 1.063em;
   height: 60px;
-  background-color: #32425c;
+  margin-top: 45px;
   text-align: center;
   border-bottom: 5px solid #293449;
+  background-color: #32425c;
 }
 
 .top-nav ul {
@@ -740,4 +741,221 @@ input[type='search']:focus {
 .top-nav a:focus {
   color: #32425c;
   background-color: #fff;
+}
+
+
+/* #########################################
+            Catalog navigation
+  ########################################## */
+
+.catalog-navigation {
+  margin-top: 60px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.promo-block {
+  font-size: 0;
+}
+
+.promo-block > div {
+  display: inline-block;
+  width: 300px;
+  height: 120px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 22px;
+  vertical-align: top;
+  color: #fff;
+}
+
+.features {
+  display: inline-block;
+  width: 300px;
+  margin-left: 16px;
+  vertical-align: top;
+}
+
+.features div {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  padding: 22px;
+  color: #fff;
+}
+
+.promo-block > div:last-child {
+  margin-right: 0;
+}
+
+.catalog-navigation p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.250;
+  margin-bottom: 18px;
+}
+
+.catalog-navigation a {
+  font-size: .875rem;
+  line-height: 1.286;
+  padding: 11px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.features > div,
+.promo-block > div {
+  position: relative;
+}
+
+.catalog-navigation a:hover,
+.catalog-navigation a:focus {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.features > div::after,
+.promo-block > div::after {
+  position: absolute;
+  width: 80px;
+  height: 72px;
+  content: '';
+  background-image: url('../images/catalog-icons-sprite.png');
+  top: 29px;
+  right: 25px;
+  background-repeat: no-repeat;
+}
+
+.materials {
+  background-color: #f6b22d;
+}
+
+.tools {
+  background-color: #4aafde;
+}
+.tools::after {
+  background-position: -86px 0;
+}
+.equipment {
+  background-color: #cc79d1;
+}
+
+.equipment::after {
+  background-position: -168px 0;
+}
+
+.discounts {
+  background-color: #85d179;
+}
+
+.discounts::after {
+  background-position: -247px 0;
+
+}
+.delivery {
+  background-color: #f6b22d;
+}
+
+.delivery::after {
+  background-position: -336px 0;
+}
+
+
+.slider {
+        position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 620px;
+    height: 266px;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+z-index: 5;
+}
+.slider-controls label{
+  display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #cccccc;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.slider-inner {
+  overflow:hidden;
+}
+
+.slider-slides {
+  width: 200%;
+  transition: transform 0.8s ease;
+}
+
+.slider-slides div {
+    padding: 20px;
+  float: left;
+    width: 620px;
+    height: 266px;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: #ee3643;
+}
+.first-slide {
+  background-image: url("../images/slider-image-1.jpg");
+}
+
+.second-slide {
+  background-image: url("../images/slider-image-2.jpg");
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-620px);
+}
+
+.slider p {
+  color: #fff;
+  margin:0;
+
+
+}
+.slider p+p {
+  font-family: "PT Sans";
+  font-size: 1.125rem;
+  line-height: 1.333em;
+  letter-spacing: .5px;
+}
+.slider .title {
+  text-transform: uppercase;
+  font-size: 2.571rem;
+  line-height: 0.833;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.slider a {
+  position: absolute;
+  left: 25px;
+  bottom: 23px;
+  z-index: 5;
+  color: #fff;
+  background-color: #ee3643;
+  width: 190px;
+  text-align: center;
+  border-radius: 5px;
 }

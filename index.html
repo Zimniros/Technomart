@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>Техномарт</title>
   <!--#################### Fonts ######################-->
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
+ <link href='https://fonts.googleapis.com/css?family=PT+Sans|Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <!--#################### Styles ######################-->
   <link rel="stylesheet" href="css/symbols-technomart.css">
   <link rel="stylesheet" href="css/style.css">
@@ -34,20 +33,20 @@
   <!-- end of .top-bar -->
   <header class="header">
     <div class="container">
-    <div class="row">
-      <div class="header-description">
-        Интернет-магазин
-        <br> строительных материалов
-        <br> и инструментов для ремонта
-      </div>
-      <div class="header-contacts">
-        <span class="phone-number"><i class="icon-phone"></i>+7 (812) 555-05-55</span>
-        <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-      </div>
-      <div class="header-user-block">
-        <a href="#" class="login"><i class="icon-login"> </i>Войти</a>
-        <a href="#" class="sing-up">Регистрация</a>
-      </div>
+      <div class="row">
+        <div class="header-description">
+          Интернет-магазин
+          <br> строительных материалов
+          <br> и инструментов для ремонта
+        </div>
+        <div class="header-contacts">
+          <span class="phone-number"><i class="icon-phone"></i>+7 (812) 555-05-55</span>
+          <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        </div>
+        <div class="header-user-block">
+          <a href="#" class="login"><i class="icon-login"> </i>Войти</a>
+          <a href="#" class="sing-up">Регистрация</a>
+        </div>
       </div>
       <nav class="top-nav">
         <ul>
@@ -63,6 +62,54 @@
     </div>
   </header>
   <!-- end of header -->
+  <div class="container">
+    <section class="catalog-navigation">
+      <div class="promo-block">
+        <div class="materials">
+          <p>Материалы</p>
+          <a href="#">На любой вкус</a>
+        </div>
+        <div class="tools">
+          <p>Инструменты</p>
+          <a href="#">На все случаи</a></div>
+        <div class="equipment">
+          <p>Техника</p>
+          <a href="#">Для стройки</a></div>
+      </div>
+      <div class="promo-slider-block">
+        <div class="slider">
+          <a href="#" class="link-to-catalog">Открыть каталог</a>
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="first-slide">
+                <p class="title">Перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <div class="second-slide">
+                <p class="title">Дрели</p>
+                <p>Соседям на радость!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features">
+          <div class="discounts">
+            <p>Скидки</p>
+            <a href="#">На 350 товаров</a></div>
+          <div class="delivery">
+            <p>Доставка</p>
+            <a href="#">Бесплатно</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- end of catalog-navigation -->
+  </div>
 </body>
 
 </html>
