@@ -533,7 +533,12 @@ p {
   line-height: 1.75;
   margin: 0;
   padding: 0;
-  ;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .row::after,
@@ -621,11 +626,6 @@ input[type='search']:focus {
   border-radius: 10px;
   outline: none;
   background-color: #fff;
-}
-
-.top-bar-right ul {
-  margin: 0;
-  list-style: none;
 }
 
 .top-bar-right li {
@@ -735,8 +735,6 @@ input[type='search']:focus {
 
 .top-nav ul {
   margin: 0 auto;
-  padding: 0;
-  list-style: none;
 }
 
 .top-nav li {
@@ -1198,12 +1196,6 @@ a.link {
   margin-top: 40px;
 }
 
-.company-description ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .company-description li {
   font-family: 'PT Sans';
   font-size: 1.125rem;
@@ -1238,4 +1230,122 @@ a.link {
 .company-contacts a {
   width: 300px;
   margin-top: 40px;
+}
+
+
+/* #########################################
+            .top-footer section
+  ########################################## */
+
+footer a,
+footer p {
+  font-size: 1.125rem;
+  line-height: 1.333;
+  color: #fff;
+}
+
+footer p {
+  display: inline-block;
+  margin-bottom: 0;
+  letter-spacing: -.85px;
+}
+
+.top-footer {
+  padding-bottom: 30px;
+  background-color: #32425c;
+}
+
+.top-footer .logo {
+  font-size: 1.875rem;
+  line-height: 1;
+  height: 68px;
+}
+
+.footer-row {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.footer-row:last-child {
+  padding: 0;
+}
+
+.top-footer-navigation,
+.top-footer-catalog {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: inline-block;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.top-footer-navigation li,
+.top-footer-catalog li {
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.top-footer-navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-footer-catalog a {
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.top-footer-catalog {
+  top: 25%;
+}
+
+
+/* #########################################
+            .bottom-footer section
+  ########################################## */
+
+.bottom-footer {
+  padding: 30px 0;
+  vertical-align: bottom;
+  background-color: #293449;
+}
+
+.bottom-footer p {
+  font-size: 1rem;
+  line-height: 1.125;
+  letter-spacing: -1px;
+}
+
+.bottom-footer p + p {
+  padding-left: 40px;
+}
+
+.bottom-footer p a {
+  font-size: inherit;
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.social {
+  display: inline-block;
+  padding-right: 140px;
+  padding-left: 140px;
+}
+
+.social li {
+  display: inline-block;
+}
+
+.social a {
+  line-height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #212a3a;
 }
