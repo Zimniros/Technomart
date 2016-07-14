@@ -518,9 +518,22 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 p {
+  font-family: 'PT Sans';
+  font-size: .813rem;
+  line-height: 1.75;
   margin: 0;
   padding: 0;
+  ;
 }
 
 .row::after,
@@ -956,12 +969,12 @@ input[type='search']:focus {
   text-transform: uppercase;
 }
 
-a.open-link {
+a.link {
   font-size: .875rem;
   line-height: 1.286;
   display: inline-block;
   width: 190px;
-  padding: 11px 25px;
+  padding: 13px 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1004,18 +1017,10 @@ a.open-link {
 }
 
 .title-wrap a {
-  font-size: .875em;
   position: absolute;
   top: 23px;
   right: 25px;
-  display: inline-block;
   width: 253px;
-  padding: 13px 0;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #ee3643;
 }
 
 .item {
@@ -1104,25 +1109,10 @@ a.open-link {
   background-color: #f2f6f8;
 }
 
-.services h2 {
-  font-size: 1.875rem;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1;
-  margin-bottom: 20px;text-transform: uppercase;
-}
-
-.services p {
-  font-family: 'PT Sans';
-  font-size: .813rem;
-  margin: 0;line-height: 1.75;
-
-}
-
 .services-tabs {
-  margin-top: 60px;
   width: 940px;
   height: 260px;
+  margin-top: 60px;
   vertical-align: top;
 }
 
@@ -1131,8 +1121,9 @@ a.open-link {
 }
 
 .tabs-controls {
+  display: inline-block;
   width: 240px;
-  display: inline-block;vertical-align: top;
+  vertical-align: top;
 }
 
 .tabs-controls label {
@@ -1149,19 +1140,19 @@ a.open-link {
 #tab-1:checked ~ .tabs-controls label[for='tab-1'],
 #tab-2:checked ~ .tabs-controls label[for='tab-2'],
 #tab-3:checked ~ .tabs-controls label[for='tab-3'] {
-  color:  #32425c;
+  color: #32425c;
   background-color: #fff;
 }
 
 .tab {
-  vertical-align: top;
+  display: none;
   width: 700px;
   height: 260px;
   margin-left: -4px;
-  display: none;
-  padding-left: 80px;background-position: 100% 25px;
+  padding-left: 80px;
+  vertical-align: top;
   background-repeat: no-repeat;
-
+  background-position: 100% 25px;
 }
 
 #tab-1:checked ~ .tab-delivery,
@@ -1170,15 +1161,44 @@ a.open-link {
   display: inline-block;
 }
 
-
 .tab-delivery {
-  background-image: url("../images/slider-delivery.png");
-  
+  background-image: url('../images/slider-delivery.png');
 }
 
 .tab-guarantee {
-  background-image: url("../images/slider-guarantees.png");
+  background-image: url('../images/slider-guarantees.png');
 }
+
 .tab-credit {
-  background-image: url("../images/slider-credit.png");
+  background-image: url('../images/slider-credit.png');
+}
+
+
+/* #########################################
+            company-info section
+  ########################################## */
+
+.company-info {
+  padding: 70px 0;
+}
+
+.company-description {
+  display: inline-block;
+  width: 540px;
+  vertical-align: top;
+}
+
+.company-description a {
+  width: 220px;
+}
+
+.company-contacts {
+  display: inline-block;
+  width: 300px;
+  margin-left: 96px;
+  vertical-align: top;
+}
+
+.company-contacts a {
+  width: 300px;
 }
