@@ -1179,7 +1179,12 @@ a.link {
   ########################################## */
 
 .company-info {
-  padding: 70px 0;
+  padding: 70px 0 82px;
+}
+
+.company-info p {
+  line-height: 1.846;
+  margin-bottom: 20px;
 }
 
 .company-description {
@@ -1190,6 +1195,37 @@ a.link {
 
 .company-description a {
   width: 220px;
+  margin-top: 40px;
+}
+
+.company-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.company-description li {
+  font-family: 'PT Sans';
+  font-size: 1.125rem;
+  line-height: 1.111;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.company-description li:last-child {
+  margin-bottom: 0;
+}
+
+.company-description li:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  content: '';
+  background-color: #fb565a;
 }
 
 .company-contacts {
@@ -1201,4 +1237,5 @@ a.link {
 
 .company-contacts a {
   width: 300px;
+  margin-top: 40px;
 }
